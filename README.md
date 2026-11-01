@@ -14,4 +14,5 @@ wire to the negative rail of your breadboard(remember, common ground is crucial)
 of the driver. Screw those tight. Now, take two male to female jumper wires. Slide one into in1 and put the other end into GP15. Slide another wire into in2, and 
 put the other end to GP16. Now the main circuit is done. When you turn the battery on, make sure that the onboard light on the L298N driver turns on. If it doesn't,
 something with your wiring is wrong. While the battery is off, run the button mapping script for your ir remote in thonny IDE. Find the hex codes for the buttons
-of your choice, and plug them in for the command lines in the main code. Then, turn on your battery, plug in your pico, run the script, and watch the motors run! 
+of your choice, and plug them in for the command lines in the main code. Remember to make a folder on your pico called lib, and in that folder put a folder called
+ir_rx, and then put your nec.py and _init_.py in that folder, and those will be your driver files.  Then, turn on your battery, plug in your pico, run the script, and watch the motors run! 
