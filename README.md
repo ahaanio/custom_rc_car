@@ -3,7 +3,7 @@ So far, I've only achieved forward, backward, and stop, but it works really nice
 only thing I had to buy was a L298N driver. The total parts I used for this prototype was: An rc chassis with a gearbox and a single dc motor, a RP2040 raspberry
 pi pico, a half sized breadboard, male to female jumper wires, an L298N Motor Driver, a Duracell 9v Alkaline battery, an ir reciver from my laser tag guns, and
 a random ir remote I found in my garage with NEC protocol. Note: If your remote has a different protocol then NEC, you can go on github and find peterhinch, who
-has the driver files for ir remotes. For the assembly, start by putting your raspberry pi pico with header pins onto the breadboard, on top of the center divider.
+has the driver files for ir remotes with different protocols. For the assembly, start by putting your raspberry pi pico with header pins onto the breadboard, on top of the center divider.
 Connect any GND pin from the pico to the negative rail on the breadboard. This rail will be your common ground. Next, take your ir reciver and use your male to 
 female wires and slide it into each of the three pins on the reciver. The pinout may vary, but for me, when the bulb is facing you, the left most pin is the DATA 
 pin, which connects to GP17 on the pico. The middle pin connects to the negative rail, and the right most pin goes to 3v3 OUT on the pico. Note: DO NOT connect 
@@ -16,3 +16,7 @@ put the other end to GP16. Now the main circuit is done. When you turn the batte
 something with your wiring is wrong. While the battery is off, run the button mapping script for your ir remote in thonny IDE. Find the hex codes for the buttons
 of your choice, and plug them in for the command lines in the main code. Remember to make a folder on your pico called lib, and in that folder put a folder called
 ir_rx, and then put your nec.py and _init_.py in that folder, and those will be your driver files.  Then, turn on your battery, plug in your pico, run the script, and watch the motors run! 
+
+Note: 9V batteries are ok for this test, but they will instantly fail if you try and put the wheels on the ground. They might have 9V, but they have a very low
+current and are not able to fully supply what the motors demand. This can drain your battery fast, so I would suggest using a 6AA battery holder. This gives you
+a good 9V, and it provides the current you need. This will be able to work perfectly on the floor, and should also be able to power your pico through VSYS. 
