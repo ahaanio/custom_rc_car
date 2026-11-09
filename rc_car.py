@@ -109,4 +109,4 @@ ir_decoder = NEC_8(ir_pin, ir_callback)
 
 while True:
     time.sleep(1)
-80,l
+
