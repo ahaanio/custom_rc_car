@@ -27,4 +27,4 @@ After a lot of hard work and a lot of troubleshooting, I finally made a fully st
 
 ![RC car](rc-car.JPG)
 
-Note: The ir receiver on the car was just put there to see the sizing. I'm planning on adding it for a future release! 
+Note: The obstacle avoidance module on the car was just put there to see the sizing. I'm planning on adding it for a future release! 
