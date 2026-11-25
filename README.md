@@ -27,6 +27,6 @@ After a lot of hard work and a lot of troubleshooting, I finally made a fully st
 
 ![RC car](rc-car.JPG)
 
-#New Version of the robot - 11/24/26
+#New version of the robot - 11/24/26
 I added a few new features to the car such as a passive buzzer for music, and more rc car like controls by holding the button to go forward and letting go to stop instead of pressing the button once. I also added features such as precise steering angles for 45 degrees and 90. Also, I added a feature that plays the mario theme with a click of a button. The only physical change was adding the buzzer. Take a jumper wire and plug the postive side of the buzzer and connect it to 5V coming from the battery. To do this, 
 take the wire that goes from the 5V output from the motor driver and put it to the postive rail. Then power the pico and buzzer from the 5v rail. Then, push the three legs of your transistor(I used a S8050) into three different breadboard holes, with the flat side facing you. The layout of my transisor looking left to right is emitter, base, and collector. Take the collector pin of your transistor and connect it to the same row as the negative side of your buzzer. Then take a 1k resistor and connect one end to the base pin, and the other end to an empty row. Then take a jumper wire and connect that row to GP21. Then, connect the emitter pin of the transistor to the common ground rail. Once that is in place, the buzzer should work great. 
